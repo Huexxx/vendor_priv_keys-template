@@ -1,13 +1,13 @@
-# priv_keys-template
+# bliss-priv_keys-template
 
 # Usage
 
 ```bash
-croot && git clone https://github.com/Huexxx/vendor_priv_keys-template vendor/priv/keys
+croot && git clone -b 14.bl https://github.com/Huexxx/vendor_priv_keys-template vendor/bliss-priv/keys
 ```
 
 ```bash
-cd vendor/priv/keys
+cd vendor/bliss-priv/keys
 ```
 
 ```
