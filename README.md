@@ -3,7 +3,7 @@
 # Usage
 
 ```bash
-croot && git clone https://github.com/Huexxx/vendor_priv_keys-template vendor/priv/keys
+croot && git clone -b 14 https://github.com/Huexxx/vendor_priv_keys-template vendor/priv/keys
 ```
 
 ```bash
@@ -21,4 +21,12 @@ Included `check_keys.py` script checks whether all apk/apex/capex files in the b
 ```
 $ ./check_keys.py ~/ROOT_DIR/out/target/product/DEVICE
 /home/USER/ROOT_DIR/out/target/product/DEVICE/obj/ETC/com.android.apex.cts.shim.v1_prebuilt_intermediates/com.android.apex.cts.shim.apex is signed with an unknown key!
+```
+
+# Building
+
+Add inherit on your vendor:
+
+```makefile
+$(call inherit-product-if-exists, vendor/priv/keys/keys.mk)
 ```
